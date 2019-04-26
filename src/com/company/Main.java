@@ -1,10 +1,14 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
+        //Making ran numbers
+        Random Rannum = new Random();
+
 	//making five arrays to store the ingredients.
         ArrayList<String> rice = new ArrayList<>();
         ArrayList<String> beans = new ArrayList<>();
@@ -47,6 +51,18 @@ public class Main {
         veggie.add("All the veggies");
 
 
+        int ricebound = Rannum.nextInt(rice.size());
+        int beanbound = Rannum.nextInt(beans.size());
+
+        for (int i =1; i<=25; i++){
+            for (int j = 0; j<=25;j++){
+                ricebound = Rannum.nextInt(rice.size());
+                beanbound = Rannum.nextInt(beans.size());
+            }
+            //Is this completely random
+            System.out.println(ricebound + ", "+beanbound);
+            //System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", " );
+        }
 
 
     }
