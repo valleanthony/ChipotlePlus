@@ -78,7 +78,7 @@ public class Chip {
         SourCream = sourCream;
     }
 
-    public Chip() {
+    public Chip(){
     }
 
     public Chip(String rice, String beans, String meat, String salsa, String veggies, String cheese, String guac, String sourCream) {
@@ -92,7 +92,10 @@ public class Chip {
         SourCream = sourCream;
     }
 
+public double getPriceofChip{
 
+
+    }
 
 }
 

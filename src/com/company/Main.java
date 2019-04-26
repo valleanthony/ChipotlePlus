@@ -20,7 +20,7 @@ public class Main {
         ArrayList<String> guac = new ArrayList<>();
         ArrayList<String> queso = new ArrayList<>();
         ArrayList<String> sourcream = new ArrayList<>();
-        ArrayList<String> chipbowl = new ArrayList<>();
+        ArrayList<Object> chipbowl = new ArrayList<>();
 
 
         //Adding types to each array
@@ -92,7 +92,8 @@ public class Main {
         String GuacO;
         String SourcreamO;
 
-
+        Double price=0.00;
+        Double base = 7.00;
 
         for (int i =1; i<=25; i++){
             for (int j = 0; j<=25;j++){
@@ -107,7 +108,7 @@ public class Main {
             }
             //Is this completely random
             //System.out.println(ricebound + ", "+ beanbound+ ", "+ meatbound + ", "+ salsabound+ ", "+ veggiebound);
-            RiceO = rice.get(ricebound);
+            RiceO = rice.get(ricebound); // Creating variables to test
             BeansO = beans.get(beanbound);
             MeatO = meat.get(meatbound);
             SalsaO = salsa.get(salsabound);
@@ -115,17 +116,16 @@ public class Main {
             CheeseO = cheese.get(cheesebound);
             GuacO = guac.get(guacbound);
             SourcreamO = sourcream.get(sourcreambound);
-            Chip chip = new Chip(RiceO,BeansO,MeatO,SalsaO,VeggieO,CheeseO,GuacO, SourcreamO);
+            Chip ch = new Chip(RiceO,BeansO,MeatO,SalsaO,VeggieO,CheeseO,GuacO,SourcreamO); // This is creating a new instance of the class Chip
+            chipbowl.add(ch); // This is adding the instance above to the array list
 
             System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", "+ meat.get(meatbound) +", "+ salsa.get(salsabound)+", "
-                                + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) );
+                    + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) +" The Price is: $"+ Chip);
+
         }
 
 
-        /*
-        Somehow i need to figure out how to add an instance of an object to an arraylist
 
-         */
 
 
 
