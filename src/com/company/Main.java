@@ -115,11 +115,17 @@ public class Main {
             CheeseO = cheese.get(cheesebound);
             GuacO = guac.get(guacbound);
             SourcreamO = sourcream.get(sourcreambound);
-            //Chip chippy + i = new Chip(RiceO,BeansO,MeatO,SalsaO,VeggieO,CheeseO,GuacO, SourcreamO)
+            Chip chip = new Chip(RiceO,BeansO,MeatO,SalsaO,VeggieO,CheeseO,GuacO, SourcreamO);
+
             System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", "+ meat.get(meatbound) +", "+ salsa.get(salsabound)+", "
                                 + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) );
         }
 
+
+        /*
+        Somehow i need to figure out how to add an instance of an object to an arraylist 
+
+         */
 
 
 
