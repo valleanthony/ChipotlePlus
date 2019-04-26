@@ -20,19 +20,19 @@ public class Main {
         ArrayList<String> guac = new ArrayList<>();
         ArrayList<String> queso = new ArrayList<>();
         ArrayList<String> sourcream = new ArrayList<>();
-        ArrayList<Object> chipbowl = new ArrayList<>();
+        ArrayList<Chip> chipbowl = new ArrayList<>();
 
 
         //Adding types to each array
         //Rice first (Ran bound is 2)
-        rice.add("White");
-        rice.add("Brown");
+        rice.add("White Rice");
+        rice.add("Brown Rice");
         rice.add("No Rice");
 
 
         //Beans (ran bound is 2)
-        beans.add("Pinto");
-        beans.add("Black");
+        beans.add("Pinto Beans");
+        beans.add("Black Beans");
         beans.add("No Beans");
 
         //Meat  (Ran bound is 5 )
@@ -54,8 +54,8 @@ public class Main {
         veggie.add("Lettuce");
         veggie.add("Fajita");
         veggie.add("Veggies");
-        veggie.add("no Veggies");
-        veggie.add("All the veggies");
+        veggie.add("No Veggies");
+        veggie.add("Lettuce, Fajita, Veggies");
 
         //Cheese
         cheese.add("Cheese");
@@ -120,12 +120,12 @@ public class Main {
             chipbowl.add(ch); // This is adding the instance above to the array list
 
             System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", "+ meat.get(meatbound) +", "+ salsa.get(salsabound)+", "
-                    + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) +" The Price is: $"+ Chip);
+                    + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) +" The Price is: $");
 
         }
 
 
-
+        System.out.println(chipbowl.get(3));
 
 
 

@@ -94,6 +94,8 @@ public class Chip {
 
 public double getPriceofChip{
 
+        Rice = 
+
 
     }
 
