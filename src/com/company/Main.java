@@ -120,12 +120,12 @@ public class Main {
             chipbowl.add(ch); // This is adding the instance above to the array list
 
             System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", "+ meat.get(meatbound) +", "+ salsa.get(salsabound)+", "
-                    + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) +" The Price is: $");
+                    + veggie.get(veggiebound)+", "+ cheese.get(cheesebound) +", "+guac.get(guacbound) +", "+ sourcream.get(sourcreambound) +" The Price is: $" );
 
         }
 
 
-        System.out.println(chipbowl.get(3));
+        System.out.println(Chip.);
 
 
 

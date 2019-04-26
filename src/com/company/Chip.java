@@ -78,7 +78,27 @@ public class Chip {
         SourCream = sourCream;
     }
 
-    public Chip(){
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public double getAddOn() {
+        return addOn;
+    }
+
+    public void setAddOn(double addOn) {
+        this.addOn = addOn;
+    }
+
+    public void setPriceofChip(double priceofChip) {
+        PriceofChip = priceofChip;
+    }
+
+    public Chip() {
     }
 
     public Chip(String rice, String beans, String meat, String salsa, String veggies, String cheese, String guac, String sourCream) {
@@ -92,11 +112,17 @@ public class Chip {
         SourCream = sourCream;
     }
 
-public double getPriceofChip{
 
-        Rice = 
+    public double getPriceofChip(){
+
+     PriceofChip = basePrice+ addOn
+
+     return.PriceofChip;
+ }
 
 
+    public String construct(){
+        return ;
     }
 
 }
