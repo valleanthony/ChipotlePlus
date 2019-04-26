@@ -53,15 +53,22 @@ public class Main {
 
         int ricebound = Rannum.nextInt(rice.size());
         int beanbound = Rannum.nextInt(beans.size());
+        int meatbound = Rannum.nextInt(meat.size());
+        int salsabound = Rannum.nextInt(salsa.size());
+        int veggiebound = Rannum.nextInt(veggie.size());
+
 
         for (int i =1; i<=25; i++){
             for (int j = 0; j<=25;j++){
                 ricebound = Rannum.nextInt(rice.size());
                 beanbound = Rannum.nextInt(beans.size());
+                meatbound = Rannum.nextInt(meat.size());
+                salsabound = Rannum.nextInt(salsa.size());
+                veggiebound = Rannum.nextInt(veggie.size());
             }
             //Is this completely random
-            System.out.println(ricebound + ", "+beanbound);
-            //System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", " );
+            //System.out.println(ricebound + ", "+ beanbound+ ", "+ meatbound + ", "+ salsabound+ ", "+ veggiebound);
+            System.out.println("Burrito " + i+ " : " + rice.get(ricebound)+", "+ beans.get(beanbound)+", "+ meat.get(meatbound) +", "+ salsa.get(salsabound)+", "+ veggie.get(veggiebound) );
         }
 
 
