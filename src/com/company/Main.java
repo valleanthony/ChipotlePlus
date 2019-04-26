@@ -123,7 +123,7 @@ public class Main {
 
 
         /*
-        Somehow i need to figure out how to add an instance of an object to an arraylist 
+        Somehow i need to figure out how to add an instance of an object to an arraylist
 
          */
 
